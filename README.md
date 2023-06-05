@@ -16,22 +16,31 @@ Simple Go application for using as starting point for writing Go applications.
 
 ## Usage
 
-```bash
-# Define which package-name to use
-REPLACE="username/repository"
+1. Clone the repository
 
-# Update package-name
-# MacOS note: use gsed instead of sed (brew install gnu-sed)
-LC_ALL=C find . -type f -exec sed -i "s#mohammadne/pillar#$REPLACE#g" {} +
+    ```bash
+    git clone git@github.com:mohammadne/pillar.git
+    ```
 
-# Update descriptions
-vim main.go
-vim cmd/server.go
+2. Change the remote git-origin (replace your own)
 
-# Troubleshooting
-docker pull "ghcr.io/$REPLACE:latest"
-docker run -d -p 8090:8090 "ghcr.io/$REPLACE:latest"
+    ```bash
+    REMOTE_ORIGIN="git@github.com:mohammadne/pillar.git"
+    git remote set-url origin $REMOTE_ORIGIN
+    ```
 
-# Delete This file and write your own README.md file
-rm README.md
-```
+3. Update package-name (replace your own)
+
+    ```bash
+    REPLACE="username/repository"
+    LC_ALL=C find . -type f -not -path ".git/*" -exec sed -i "s#mohammadne/pillar#$REPLACE#g" {} +
+    ```
+
+4. Update command descriptions
+
+    ```bash
+    vim main.go
+    vim cmd/server.go
+    ```
+
+5. Update or delete this file
