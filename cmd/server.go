@@ -18,7 +18,7 @@ func (cmd Server) Command(trap chan os.Signal) *cobra.Command {
 
 	return &cobra.Command{
 		Use:   "server",
-		Short: "run PhoneBook server",
+		Short: "run Pillar server",
 		Run:   run,
 	}
 }

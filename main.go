@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	const description = "Snappcloud status backend for checking healthness of applications"
+	const description = "Pillar applications"
 	root := &cobra.Command{Short: description}
 
 	trap := make(chan os.Signal, 1)
