@@ -45,4 +45,20 @@ Simple Go application for using as starting point for writing Go applications.
     vim cmd/server.go
     ```
 
-5. Update or delete this file
+5. Update deployment name and create helm charts
+
+    ```bash
+    cd ./deployments
+
+    # update 
+    vim ./tearup.sh
+    vim ./teardown.sh
+    
+    # replace your own application name.
+    helm create pillar
+
+    # update folder names based on the commands.
+    mv -rf ./pillar ./server
+    ```
+
+6. Update or delete this README.md file based on your needs
