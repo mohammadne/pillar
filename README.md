@@ -5,9 +5,9 @@
   <img src="https://img.shields.io/github/actions/workflow/status/mohammadne/pillar/ci.yaml?label=ci&logo=github&style=for-the-badge&branch=main" alt="GitHub Workflow Status" />
   <img src="https://img.shields.io/github/release/mohammadne/pillar.svg?style=for-the-badge" alt="Release">
   <img src="https://img.shields.io/codecov/c/gh/mohammadne/pillar?logo=codecov&style=for-the-badge" alt="Codecov">
-  <img src="https://img.shields.io/github/license/mohammadne/pillar?style=for-the-badge" alt="Licanse">
+  <img src="https://img.shields.io/github/license/mohammadne/pillar?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/github/stars/mohammadne/pillar?style=for-the-badge" alt="Starts">
-  <img src="https://img.shields.io/github/downloads/mohammadne/pillar/total.svg?style=for-the-badge" alt="Releases">
+  <img src="https://img.shields.io/github/downloads/mohammadne/pillar/total.svg?style=for-the-badge" alt="Downloads">
 </p>
 
 ## Introduction
