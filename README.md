@@ -17,17 +17,21 @@ Simple Go application for using as starting point for writing Go applications.
 ## Usage
 
 ```bash
-# MacOS note: use gsed instead of sed
-REPLACE="sample-pillar"
-LC_ALL=C find . -type f -exec gsed -i "s#mohammadne/pillar#$REPLACE#g" {} +
-```
+# Define which package-name to use
+REPLACE="username/repository"
 
-## Troubleshooting
+# Update package-name
+# MacOS note: use gsed instead of sed (brew install gnu-sed)
+LC_ALL=C find . -type f -exec sed -i "s#mohammadne/pillar#$REPLACE#g" {} +
 
-```bash
-docker pull ghcr.io/mohammadne/pillar:latest
-docker run -d -p 8090:8090 ghcr.io/mohammadne/pillar:latest
+# Update descriptions
+vim main.go
+vim cmd/server.go
 
-curl localhost:8090
-# hello from devopshobbies
+# Troubleshooting
+docker pull "ghcr.io/$REPLACE:latest"
+docker run -d -p 8090:8090 "ghcr.io/$REPLACE:latest"
+
+# Delete This file and write your own README.md file
+rm README.md
 ```
