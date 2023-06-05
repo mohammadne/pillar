@@ -1,1 +1,33 @@
 # Pillar
+
+<!-- BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/github/actions/workflow/status/mohammadne/pillar/ci.yaml?label=ci&logo=github&style=for-the-badge&branch=main" alt="GitHub Workflow Status" />
+  <img src="https://img.shields.io/github/release/mohammadne/pillar.svg?style=for-the-badge" alt="Release">
+  <img src="https://img.shields.io/codecov/c/gh/mohammadne/pillar?logo=codecov&style=for-the-badge" alt="Codecov">
+  <img src="https://img.shields.io/github/license/mohammadne/pillar?style=for-the-badge" alt="Licanse">
+  <img src="https://img.shields.io/github/stars/mohammadne/pillar?style=for-the-badge" alt="Starts">
+  <img src="https://img.shields.io/github/downloads/mohammadne/pillar/total.svg?style=for-the-badge" alt="Releases">
+</p>
+
+## Introduction
+
+Simple Go application for using as starting point for writing Go applications.
+
+## Usage
+
+```bash
+# MacOS note: use gsed instead of sed
+REPLACE="sample-pillar"
+LC_ALL=C find . -type f -exec gsed -i "s#mohammadne/pillar#$REPLACE#g" {} +
+```
+
+## Troubleshooting
+
+```bash
+docker pull ghcr.io/mohammadne/pillar:latest
+docker run -d -p 8090:8090 ghcr.io/mohammadne/pillar:latest
+
+curl localhost:8090
+# hello from devopshobbies
+```
